@@ -56,7 +56,7 @@ downConnect = "│   "
 midBranch = "├── "
 endBranch = "└── "
 
-with open(fPath + "/../json/" + fbsInput) as inFile:
+with open(fPath + "/json/" + fbsInput) as inFile:
     list_FBS=json.load(inFile)
 
 #list_ControlSystems(Tag, Identation Level, Description, hasUncle, hasSibling)

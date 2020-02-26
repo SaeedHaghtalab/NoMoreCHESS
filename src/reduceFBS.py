@@ -28,7 +28,7 @@ if filterPrefix[0] != '=':
 listReduced = list()
 
 i=0
-with open(fPath + "/../json/fbs.json") as fbsNodes:
+with open(fPath + "/json/fbs.json") as fbsNodes:
     listFBS = json.load(fbsNodes)
     lenFBS=len(listFBS)
     print("filter")
@@ -40,5 +40,5 @@ with open(fPath + "/../json/fbs.json") as fbsNodes:
             print(str(i) + "/" + str(lenFBS))
     lenReduced=len(listReduced)
     print("Reduced FBS from " + str(lenFBS) + " to " + str(lenReduced) + " nodes.")
-    with open(fPath + "/../json/" + outName,"w+") as outfile:
+    with open(fPath + "/json/" + outName,"w+") as outfile:
         json.dump(listReduced,outfile)
